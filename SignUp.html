@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link rel="icon" type="images/x-icon" href="Photos/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Plugins/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="MyStyle.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="LoginStyle.css"
+    />
+    
+
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="navbar">
+          <div class="logo">
+            <a href="Index.html"><h2>E-Commerce</h2></a>
+          </div>
+
+          <ul class="links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <a href="Cart.html"
+              ><ion-icon size="large" name="cart-outline"></ion-icon
+            ></a>
+          </ul>
+
+          <div class="right"id="LogInfo">
+            <a href="Login.html"><button >Login</button></a>
+            <a href="SignUp.html"><button>Sign-Up</button></a>
+            <span id="logInfo">
+            <span id="userLog">user</span>
+            <a href="SignUp.html"><button>Log out</button></a>
+          </span>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="row">
+        <nav class="breadcrumbs">
+          <a href="#home" class="breadcrumbs__item">Home</a>
+          <a href="#shop" class="breadcrumbs__item is-active">Login</a>
+        </nav>
+      </div>
+
+      <div class="row">
+        <section>
+          <div class="registerBody">
+            <div class="imageCount">
+              <img src="Photos/logoWithText.png" alt="website logo picture" />
+              <h1>For all house needs</h1>
+            </div>
+
+            <div class="regPart">
+              <h1>Register</h1>
+              <div class="selectOption">
+                <h3
+                  id="slC"
+                  class="selectedOption"
+                >
+                  Client
+                </h3>
+                <h3 id="clC">Seller</h3>
+              </div>
+              <br>
+              <div class="clientReg">
+                <!-- buyer form -->
+
+                <form action="" id="clientForm">
+                  <h2>Your Name</h2>
+                  <input type="text" id="clientName" />
+                  
+                  <br />
+                  <h2>Email</h2>
+                  <input type="email"  id="clientEmail" />
+                  <br />
+                  <h2>Password</h2>
+                  <input type="password" id="clientPassword" />
+                  <br />
+                  <h2>Confirm password</h2>
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    autocomplete="new-password"
+                  />
+                  <br />
+                  <div id="checkform" style="color: red;"></div>
+                  <input
+                    type="submit"
+                    class="subBtn"
+                    value="Register"
+                    
+                  />
+                </form>
+              </div>
+              <div class="sellerReg">
+                <!-- seller form -->
+                <form action="" id="sellerForm">
+                  <h2>Your Name</h2>
+                  <input type="text" id="userName" />
+                
+                  <br />
+                  <h2>Email</h2>
+                  <input type="text" id="clientEmail" />
+                  <br />
+                  <h2>Password</h2>
+                  <input type="password" id="password" />
+                  <br />
+                  <h2>Confirm password</h2>
+                  <input type="password" id="Cpassword" />
+                  <br />
+                  <br />
+                  <label for="catCheckBox"
+                    >select category to sell your products</label
+                  >
+
+                  <select name="catSelect" id=""></select>
+                  <br />
+
+                  <input type="submit" class="subBtn" value="Register" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="row">
+        <footer>
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3>About</h3>
+              <p>Your website description goes here.</p>
+            </div>
+            <div class="footer-section">
+              <h3>Contact</h3>
+              <ul class="footer-contact">
+                <li>Email: info@example.com</li>
+                <li>Phone: 123-456-7890</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="Plugins/js/bootstrap.js"></script>
+    <script src="Plugins/js/bootstrap.bundle.js"></script>
+    <script src="MyScript.js"></script>
+  </body>
+</html>

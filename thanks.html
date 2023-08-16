@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>submite page</title>
+</head>
+<style>
+    #user{
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        font-size: 150px;
+        background-color: green;
+        color: white;
+    }
+</style>
+<body>
+    <p id="user"></p>
+    <script>
+        let massage=document.getElementById('user');
+		urlParams = new URLSearchParams(window.location.search);
+		name = urlParams.get('name');
+        massage.innerHTML=' Thanks For Ordring  ' +name + '';
+	</script>
+    
+</body>
+</html>

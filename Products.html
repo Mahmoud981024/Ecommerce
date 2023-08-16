@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <link rel="icon" type="images/x-icon" href="Photos/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Plugins/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="MyStyle.css" />
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    img{
+      width:100%;
+      height: 400px;
+    }
+    .badge{
+  width: 20px;
+  height: 20px;
+  background-color: crimson;
+  color:#fff;
+  text-align: center;
+  display: none;
+  position: absolute;
+  border-radius: 50%;
+  top:7px;
+  right: -1;
+  font-size: 10px;
+  line-height: 20px;
+}
+    .cards{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        flex-wrap: wrap;
+
+    }
+    .cards .card {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    font-size: 8px;
+    max-width: 300px !important;
+    /* height: 350px !important; */
+    }
+    .cards .card:hover{
+      transform: translateY(-20%);
+    }
+    .cards .card h1 {
+      font-size: 15px;
+      
+    }
+    
+    .cards .price {
+        margin-top:5px ;
+        margin-bottom:5PX ;
+        color: grey;
+        font-size: 22px;
+    }
+    
+    .card button {
+        border: none;
+        outline: 0;
+        padding: 20px;
+        margin: 5px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 95%;
+        font-size: 18px;
+    }
+    
+    .card button:hover {
+        opacity: 0.7;
+    }
+    </style>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="navbar">
+            <div class="logo">
+              <a href="Index.html"><h2>E-Commerce</h2></a>
+            </div>
+
+            <ul class="links">
+              <li><a href="Index.html">Home</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <a href="cartProducts.html"
+                ><ion-icon size="large" name="cart-outline"></ion-icon
+              >
+              <span class="badge"></span>
+            
+            </a>
+            </ul>
+
+            <div class="right">
+              <a href="Login.html"><button>Login</button></a>
+              <a href="SignUp.html"><button>Sign-Up</button></a>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="row">
+        <nav class="breadcrumbs">
+          <a href="#home" class="breadcrumbs__item ">Home</a>
+          <a href="#shop" class="breadcrumbs__item is-active">Products</a> 
+        </nav>
+      </div>
+
+        <div class="cards">
+
+      </div>
+
+      <div class="row">
+        <footer>
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3>About</h3>
+              <p>Your website description goes here.</p>
+            </div>
+            <div class="footer-section">
+              <h3>Contact</h3>
+              <ul class="footer-contact">
+                <li>Email: info@example.com</li>
+                <li>Phone: 123-456-7890</li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="Plugins/js/bootstrap.js"></script>
+    <script src="Plugins/js/bootstrap.bundle.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>
